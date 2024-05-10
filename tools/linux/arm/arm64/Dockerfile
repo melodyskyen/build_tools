@@ -1,4 +1,4 @@
-FROM arm64v8/ubuntu:16.04
+FROM arm64v8/ubuntu:22.04
 
 # basic dependencies
 RUN apt-get -y update && \
