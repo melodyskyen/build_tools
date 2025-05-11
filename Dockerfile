@@ -3,10 +3,6 @@ FROM ubuntu:20.04
 ENV TZ=Etc/UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN apt-get -y update && \
-    apt-get -y install python \
-                       python3 \
-                       sudo
                     
 RUN apt-get update && apt-get install -y python3 sudo curl gnupg wget python-is-python3
 
